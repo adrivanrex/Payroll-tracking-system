@@ -36,6 +36,22 @@ file = {
 };
 
 
+User = {
+  one: {
+    username: "user1",
+    password: "none",
+    Department: "coa"
+  },
+  two: {
+    username: "user2",
+    password: "pass2",
+    department: "Budget",
+  }
+  
+}
+
+
+
 
 
 inputSearch = 'cmo';
