@@ -13,7 +13,7 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
     IdleProvider.idle(5); // in seconds
     IdleProvider.timeout(120); // in seconds
 
-    $urlRouterProvider.otherwise("/dashboards/govTrackerSearch");
+    $urlRouterProvider.otherwise("/dashboards/govtrackerSearch");
 
     $ocLazyLoadProvider.config({
         // Set to true if you want to see what and when is dynamically loaded
@@ -106,9 +106,9 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
                 }
             }
         })
-        .state('dashboards.govTrackerSearch', {
-            url: "/govTrackerSearch",
-            templateUrl: "views/govTrackerSearch.html",
+        .state('dashboards.govtrackerSearch', {
+            url: "/govtrackerSearch",
+            templateUrl: "views/govtrackerSearch.html",
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
                     return $ocLazyLoad.load([
@@ -130,9 +130,9 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
                 }
             }
         })
-        .state('dashboards.govTrackerCreate', {
-            url: "/govTrackerCreate",
-            templateUrl: "views/govTrackerCreate.html",
+        .state('dashboards.govtrackerCreate', {
+            url: "/govtrackerCreate",
+            templateUrl: "views/govtrackerCreate.html",
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
                     return $ocLazyLoad.load([
@@ -154,9 +154,9 @@ function config($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, IdlePro
                 }
             }
         })
-        .state('dashboards.govTrackerSend', {
-            url: "/govTrackerSend",
-            templateUrl: "views/govTrackerSend.html",
+        .state('dashboards.govtrackerSend', {
+            url: "/govtrackerSend",
+            templateUrl: "views/govtrackerSend.html",
             resolve: {
                 loadPlugin: function ($ocLazyLoad) {
                     return $ocLazyLoad.load([
