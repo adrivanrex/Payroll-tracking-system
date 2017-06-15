@@ -1537,6 +1537,8 @@ table.dataTable thead .sorting:after {
 /* CIRCLE */
 .img-circle {
     border-radius: 50%;
+    width:80px;
+    height:70px;
 }
 .btn-circle {
     width: 30px;
