@@ -35,7 +35,7 @@
  * Contains severals global data used in diferent view
  *
  */
-function MainCtrl($scope, Oboe, $http,$location) {
+function MainCtrl($scope, $http,$location) {
     var currentLocation = $location.path();
     console.log(currentLocation);
     function StreamData(){
